@@ -1,0 +1,170 @@
+:root {
+  --navbar-height: 6vh;
+  --logo-height: 3vh;
+  --tab-font-size: 16px;
+  --username-font-size: 16px;
+  --button-font-size: 14px;
+  --button-padding: 8px 16px;
+  --button-min-width: 120px;
+}
+
+/* Base styles for the navbar */
+.navbar {
+  display: flex;
+  width: 100%;
+  height: var(--navbar-height); /* Use height instead of max-height */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute space between logo and tabs/login */
+  padding: 10px 2%; /* Responsive padding using percentage */
+  background-color: #8eb476;
+  color: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 15px; /* Match the card's border radius */
+  border-top-right-radius: 15px;
+  font-family: 'Poppins', sans-serif; /* Apply modern font to the navbar */
+  overflow: visible; /* Ensure no content overflows */
+}
+
+/* Logo container */
+.navbar-logo {
+  display: flex;
+  align-items: center; /* Center logo vertically */
+  max-width: 100%; /* Allow the container to adjust based on content */
+  flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+/* Responsive logo size */
+.navbar-logo .logo {
+  height: var(--logo-height); /* Fixed height for the logo */
+  width: auto; /* Width adjusts automatically to maintain aspect ratio */
+  max-width: 100%; /* Prevent overflow */
+  cursor: pointer;
+}
+
+/* Container for tabs */
+.navbar-tabs {
+  display: flex;
+  align-items: center; /* Center tabs vertically */
+  justify-content: center;
+  margin-left: 1%; /* Close to the logo */
+  flex-grow: 1; /* Allow tabs to take up available space */
+}
+
+/* Modern tab appearance */
+.navbar-tabs .tab {
+  font-size: var(--tab-font-size); /* Set a base font size */
+  font-weight: 600; /* Bold text */
+  cursor: pointer;
+  text-transform: uppercase; /* Uppercase text for a modern look */
+  color: #ffffff; /* White color for contrast */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+  padding: 5px 10px; /* Add padding for a button-like appearance */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Tab hover effect */
+.navbar-tabs .tab:hover {
+  color: #8eb476; /* Change text color on hover */
+  background-color: #ffffff; /* Change background on hover */
+}
+
+/* Responsive button styles */
+.navbar-login .btn-login {
+  background-color: #ffffff;
+  color: #8eb476;
+  border: 1px solid #ffffff;
+  padding: var(--button-padding); /* Padding adjusts based on viewport width */
+  border-radius: 5px; /* Border radius adjusts based on viewport width */
+  font-size: var(--button-font-size); /* Font size adjusts based on viewport width */
+  white-space: nowrap;
+  min-width: var(--button-min-width); /* Minimum width for the button */
+  box-sizing: border-box;
+}
+
+.navbar-login .btn-login:hover,
+.navbar-login .btn-login:active,
+.navbar-login .btn-login:focus {
+  background-color: #0064008a; /* Dark green background */
+  color: white; /* White text color */
+  border-color: #0064008a; /* Dark green border color */
+  box-shadow: none; /* Ensure no shadow */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 6vh; /* Adjust navbar height */
+    --logo-height: 3vh; /* Adjust logo height */
+    --tab-font-size: 14px; /* Adjust font size for tabs */
+    --username-font-size: 14px; /* Adjust font size for username */
+    --button-font-size: 12px; /* Adjust font size for button */
+    --button-padding: 8px 12px; /* Adjust button padding */
+    --button-min-width: 100px; /* Adjust button minimum width */
+  }
+
+  .navbar {
+    padding: 10px 1%;
+  }
+
+  .navbar-tabs .tab {
+    margin: 0 1.5vw;
+  }
+
+  .navbar-login .btn-login {
+    padding: var(--button-padding);
+    font-size: var(--button-font-size);
+    min-width: var(--button-min-width);
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  :root {
+    --navbar-height: none; /* Remove max-height constraint */
+    --logo-height: 2vh; /* Further adjust logo height */
+    --tab-font-size: 12px; /* Adjust font size for tabs */
+    --username-font-size: 12px; /* Adjust font size for username */
+    --button-font-size: 10px; /* Adjust font size for button */
+    --button-padding: 6px 10px; /* Adjust button padding */
+    --button-min-width: 80px; /* Adjust button minimum width */
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px 2%;
+  }
+
+  .navbar-tabs {
+    margin-top: 10px;
+  }
+
+  .navbar-login .btn-login {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Welcome message */
+.welcome-message {
+  margin-right: 10px; /* Space between the welcome message and user icon */
+  font-size: var(--username-font-size); /* Use the same font size as defined */
+  font-weight: bold;
+  color: #ffffff; /* White color for contrast */
+}
+
+/* User icon */
+.user-icon {
+  cursor: pointer;
+  position: relative; /* Ensure proper positioning for dropdown */
+}
+
+/* User icon image */
+.user-icon img {
+  height: 4vh; /* Adjust the icon size as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 1%;
+}

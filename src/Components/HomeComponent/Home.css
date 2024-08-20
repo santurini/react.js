@@ -1,0 +1,83 @@
+.home-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+  padding-top: 5vh; /* Adjust padding to account for navbar height */
+}
+
+.mySwiper {
+  width: 90%;
+  height: 100%; /* Let the height be determined by the content */
+}
+
+.swiper-slide {
+  width: 100%; /* Fixed width for slides */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  flex-direction: column; /* Stack image and text card vertically */
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 18px; /* Rounded corners for a softer look */
+  overflow: hidden; /* Ensure content does not overflow */
+  background: none; /* Remove background */
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+}
+
+.slide-content img {
+  width: 90%; /* Fixed width for the image */
+  height: 50vh; /* Fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the area */
+  border-radius: 18px 18px 0 0; /* Rounded corners for the top of the image */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+}
+
+.text-card {
+  width: 90%; /* Match the width of the image */
+  height: 20vh;
+  background-color: #8eb476; /* Blue background */
+  color: white; /* White text for contrast */
+  border-radius: 0 0 18px 18px; /* Rounded corners for the bottom of the text card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the text vertically */
+}
+
+.text-card h2 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  margin: 1vh;
+}
+
+.text-card p {
+  font-size: 1rem; /* Reduced font size for subtitle */
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  margin: 1vh; /* Remove default margin */
+}
+
+/* Style for Swiper pagination */
+.swiper-pagination {
+  position: relative; /* Positioning the pagination absolutely within the container */
+  width: 100%; /* Full width of the Swiper container */
+  text-align: center; /* Center the pagination dots */
+  margin-top: 3vh;
+}
+
+/* Style for Swiper pagination dots */
+.swiper-pagination-bullet {
+  background: rgba(0, 0, 0, 0.513); /* Color for pagination dots */
+  opacity: 0.7; /* Slightly transparent dots */
+}
+
+.swiper-pagination-bullet-active {
+  background: #42a901; /* Color for active dot */
+}

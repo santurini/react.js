@@ -1,0 +1,151 @@
+/* Ensures the login card is centered and positioned correctly */
+.login-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items to the top */
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+  padding-top: 5vh; /* Adjust padding to account for navbar height */
+}
+
+/* Style for the login card */
+.login-card {
+  background-color: #ffffff;
+  border-radius: 15px; /* Rounded corners for a softer look */
+  width: 100%;
+  max-width: 400px;
+  padding: 30px; /* More padding for a spacious look */
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  font-family: 'Poppins', sans-serif; /* Applying the Poppins font */
+}
+
+/* Title of the login card */
+.login-title {
+  margin-bottom: 20px; /* Space below the title */
+  font-size: 2rem; /* Larger font size for emphasis */
+  color: #343a40; /* Darker text color */
+  font-weight: 600; /* Semi-bold title */
+}
+
+/* Style for the form inside the card */
+.login-form {
+  width: 100%;
+}
+
+/* Form group to style the input */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 12px; /* Increased padding for a comfortable input area */
+  font-size: 1rem;
+  border: 1px solid #ced4da; /* Light grey border */
+  border-radius: 15px; /* Rounded corners for input fields */
+  box-sizing: border-box;
+  color: #495057; /* Darker text color */
+  background-color: #f8f9fa; /* Light grey background */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.input-field:focus {
+  border-color: #007bff; /* Highlight border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle shadow on focus */
+}
+
+/* Styling for the form-check and forgot-password on the same line */
+.form-check-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px; /* Increased space between checkbox and buttons */
+}
+
+/* Styling for the form-check (checkbox) */
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  font-size: 1rem;
+  color: #495057; /* Darker text color */
+}
+
+/* Styling for the forgot password button to look like a link */
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.875rem;
+}
+
+.forgot-password-btn:hover {
+  color: #0056b3;
+}
+
+/* Error message styling */
+.error-message {
+  color: #dc3545; /* Red color for error */
+  font-size: 0.875rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Container for buttons to ensure they stack vertically */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Common styling for buttons */
+.btn {
+  border: 2px solid transparent; /* Default border color for buttons */
+  color: #ffffff; /* Default text color */
+  padding: 12px 20px; /* Increased padding for a comfortable button */
+  border-radius: 15px; /* Rounded corners for buttons */
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%; /* Ensure buttons take full width of the container */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Custom styling for the login button */
+.btn-login {
+  background-color: #007bff;
+}
+
+.btn-login:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 0 2px #0056b3; /* Light up effect on hover */
+  color: #ffffff; /* Ensure text color remains white */
+}
+
+/* Custom styling for the register button */
+.btn-register {
+  background-color: #28a745;
+}
+
+.btn-register:hover {
+  background-color: #218838;
+  box-shadow: 0 0 0 2px #218838; /* Light up effect on hover */
+  color: #ffffff; /* Ensure text color remains white */
+}
+
+.password-input-container {
+  position: relative; /* To position the toggle button inside the input */
+  display: flex;
+  align-items: center;
+}

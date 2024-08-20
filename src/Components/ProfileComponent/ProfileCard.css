@@ -1,0 +1,229 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 5vh;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to the container */
+}
+
+.profile-card {
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  padding: 3vh;
+  width: 100%;
+  max-width: 55vh;
+  background-color: #fff;
+}
+
+.profile-title {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-item label {
+  font-weight: bold;
+  color: #333;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.profile-item span {
+  color: #555;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.change-password-section {
+  margin-top: 30px;
+}
+
+.change-password-section h3 {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.change-password-form .form-group {
+  margin-bottom: 20px;
+}
+
+.change-password-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.change-password-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  transition: border-color 0.3s;
+}
+
+.change-password-form input:focus {
+  border-color: #007bff;
+}
+
+.password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 10px;
+  border: none;
+  background: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.password-toggle-btn img {
+  width: 20px;
+  height: auto;
+}
+
+.btn-change-password {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.btn-change-password:hover {
+  background-color: #0056b3;
+}
+
+.delete-account-section {
+  margin-top: 5px;
+}
+
+.btn-delete-account {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.btn-delete-account:hover {
+  background-color: #c82333;
+}
+
+.delete-confirmation-card {
+  background-color: #fd070741;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.delete-confirmation-card p {
+  margin-bottom: 15px;
+  color: #333333;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.delete-confirmation-card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.delete-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-go-back {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.btn-go-back:hover {
+  background-color: #5a6268;
+}
+
+.btn-confirm-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.btn-confirm-delete:hover {
+  background-color: #c82333;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.error-message.delete {
+  color: #dc3545;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+}

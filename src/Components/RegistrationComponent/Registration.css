@@ -1,0 +1,153 @@
+/* Style for the registration card container */
+.registration-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items to the top */
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+  padding-top: 80px; /* Adjust padding to account for navbar height */
+}
+
+/* Style for the registration card */
+.registration-card {
+  background-color: #ffffff;
+  border-radius: 15px; /* Rounded corners for a softer look */
+  width: 90%; /* Default width for smaller screens */
+  max-width: 400px; /* Maximum width to prevent the card from becoming too wide */
+  padding: 30px; /* More padding for a spacious look */
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  margin-top: 20px; /* Margin between the card and the navbar */
+  font-family: 'Poppins', sans-serif; /* Applying the Poppins font */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .registration-card {
+    width: 60%; /* Width of 30% for screens wider than 768px */
+  }
+}
+
+/* Title of the registration card */
+.registration-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for the form inside the card */
+.registration-form {
+  width: 100%;
+}
+
+/* Form group to style the input */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners for the inputs */
+  box-sizing: border-box;
+  color: #333; /* Text color */
+}
+
+/* Placeholder text styling */
+.form-group input::placeholder {
+  color: #aaa; /* Light grey color for placeholder text */
+}
+
+/* Password input container styling */
+.password-input-container {
+  position: relative; /* To position the toggle button inside the input */
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  border: none;
+  background: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Hide and show password icons */
+.password-toggle-btn img {
+  width: 20px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.success-message {
+  color: green;
+  font-size: 0.875rem;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Common styling for buttons */
+.btn {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px; /* Rounded corners for buttons */
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%; /* Make sure the button takes full width of its container */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Styling for the primary button */
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 0 2px #0056b3; /* Light up effect on hover */
+  color: white; /* Ensure text stays white */
+}
+
+/* Disabled button styling */
+.btn-disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  border: none;
+  color: #fff; /* Optional: adjust text color for better contrast */
+}
+
+/* Success card styling */
+.success-card {
+  background-color: #d4edda; /* Light green background */
+  border-color: #c3e6cb; /* Green border */
+  border-radius: 15px; /* Rounded corners for a softer look */
+  width: 90vw; /* Use viewport width for adaptability */
+  height: 25vh; /* Height as a percentage of viewport height */
+  padding: 30px; /* More padding for a spacious look */
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  margin-top: 20px; /* Margin between the card and the navbar */
+  font-family: 'Poppins', sans-serif; /* Applying the Poppins font */
+}
+
+.success-message.request {
+  color: #155724; /* Dark green text */
+  font-size: 1.5rem; /* Increase font size */
+  font-weight: bold; /* Make the text bold for emphasis */
+  margin: 0; /* Remove margin if necessary */
+}
